@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root {
+
+    /* COLORS */
+
+    --Orange: hsl(26, 100%, 55%);
+    --Paleorange: hsl(25, 100%, 94%);
+    --Verydarkblue: hsl(220, 13%, 13%);
+    --Darkgrayishblue: hsla(217, 9%, 45%);
+    --Grayishblue: hsl(220, 14%, 75%);
+    --Lightgrayisgblue: hsla(217, 9%, 45%, 0.3);
+    --Lightgrayishblue2: rgba(236, 234, 234, 0.65) ;
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%)
+
+}
+body {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+}
+
+        /* HEADER SECTION */
+
+header {
+    border-bottom: 1px solid var(--Lightgrayishblue2) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: 1100px;
+}
+header section:first-child {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+header nav li {
+    color: var(--Darkgrayishblue);
+    font-size: 18px;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+header section:last-child {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
+.Cart {
+    margin-top: 0.8rem;
+}
+
+        /* MAIN SECTION */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    margin: auto;
+    margin-top: 2rem;
+    width: 1100px;
+}
+
+        /* PRODUCT PAGE */
+
+.ProductPage section img {
+    border-radius: 15px;
+    cursor: pointer;
+}
+.ProductPage section:last-child img:hover {
+    border: 3px solid var(--Orange) ;
+    filter: opacity(0.4);
+}
+.ProductPage section:last-child {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+        /* PRODUCT DETAILS */
+
+.ProductDetails {
+    margin-top: 5rem;
+}
+.ProductDetails h3 {
+    color: var(--Orange);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.ProductDetails h1 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+.ProductDetails p {
+    color: var(--Darkgrayishblue);
+    margin-bottom: 2rem;
+}
+.ProductDetails div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-bottom: -2rem;
+}
+.ProductDetails div h2 {
+    letter-spacing: 2px;
+}
+.ProductDetails div p {
+    background-color: var(--Paleorange);
+    border-radius: 5px;
+    color: var(--Orange);
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+}
+.Overwrite {
+    color: var(--Lightgrayishblue2);
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+        /* PRODUCTCART */
+
+.ProductCart {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-top: 3.5rem;
+}
+.ProductCart div {
+    background-color: var(--Lightgrayishblue2);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+    padding: 0.4rem 1rem;
+}
+.ProductCart div p {
+    background-color: inherit;
+    color: var(--Black);
+    margin-top: -0.2rem;
+}
+.Add {
+    margin-top: 0.6rem;
+}
+.ProductCart button {
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    height: 50px;
+    width: 240px;
+}
+.ProductCart button p {
+    color: var(--White);
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    text-align: center;
+}
+#ShoppingCart {
+    Color: var(--White);
+}
